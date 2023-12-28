@@ -8,7 +8,7 @@ namespace DAL
     {
         SqlConnection cn;
         SqlCommand cmd;
-        string memo = ConfigurationManager.ConnectionStrings["batu"].ConnectionString;
+        string batu = ConfigurationManager.ConnectionStrings["batu"].ConnectionString;
         public int ExecuteNonQuery(string cmdtext, SqlParameter[] p = null)
         {
             using (cn = new SqlConnection("batu"))
